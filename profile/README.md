@@ -12,5 +12,13 @@ There are two kinds of packages here:
 - **React packages.** Components and hooks for React apps, mostly built on
   [react-map-gl](https://visgl.github.io/react-map-gl/) and [MapLibre](https://maplibre.org/).
 
-Each repository has its own README with the details. The packages are published on npm under
-[`@osm-editor-kit`](https://www.npmjs.com/org/osm-editor-kit).
+## Where to find the packages
+
+The complete list is the npm organisation
+[`@osm-editor-kit`](https://npmx.dev/org/osm-editor-kit).
+
+The npm organisation and this GitHub organisation do not line up one to one. Only some of the
+packages have their repository here. Others are developed inside the project they came from,
+for example in [osmberlin/street-space-editor](https://github.com/osmberlin/street-space-editor),
+and are published under the same npm name. Each package's npm page links to its source
+repository and README.
