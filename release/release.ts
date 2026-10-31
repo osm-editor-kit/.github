@@ -122,6 +122,12 @@ if (pending.length > 0) {
 
 const toPublish = inDependencyOrder(publicPackages().filter((pkg) => !isOnNpm(pkg)))
 if (toPublish.length === 0) {
+  // Empty changesets bump nothing, but `changeset version` still removes their files.
+  if (read('git', ['status', '--porcelain']).out) {
+    run('git', ['add', '--all'])
+    run('git', ['commit', '--quiet', '--message', 'Release: remove empty changesets'])
+    run('git', ['push', '--quiet', 'origin', 'main'])
+  }
   console.log('Nothing to release.')
   process.exit(0)
 }
