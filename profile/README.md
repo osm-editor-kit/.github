@@ -17,8 +17,9 @@ There are two kinds of packages here:
 The complete list is the npm organisation
 [`@osm-editor-kit`](https://npmx.dev/org/osm-editor-kit).
 
-The npm organisation and this GitHub organisation do not line up one to one. Only some of the
-packages have their repository here. Others are developed inside the project they came from,
-for example in [osmberlin/street-space-editor](https://github.com/osmberlin/street-space-editor),
-and are published under the same npm name. Each package's npm page links to its source
-repository and README.
+Nearly all packages have their repository here. One repository can hold several packages:
+[osm-editor-kit/street-space-editor](https://github.com/osm-editor-kit/street-space-editor)
+contains the Street Space Editor and the packages that grew out of it. The one exception is
+`key-value-db-client`, which lives in
+[FixMyBerlin/key-value-db](https://github.com/FixMyBerlin/key-value-db). Each package's npm page
+links to its source repository and README.
